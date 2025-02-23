@@ -1,32 +1,21 @@
 return {
-    "snacks.nvim",
-    opts = {
-      dashboard = {
-        preset = {
-          pick = function(cmd, opts)
-            return LazyVim.pick(cmd, opts)()
-          end,
-          header = [[
+  "snacks.nvim",
+  opts = {
+    dashboard = {
+      preset = {
+        pick = function(cmd, opts)
+          return LazyVim.pick(cmd, opts)()
+        end,
+        header = [[
+      
+ ______     ______     ______     __  __     __   __   __     __    __    
+/\  ___\   /\  __ \   /\  ___\   /\ \_\ \   /\ \ / /  /\ \   /\ "-./  \   
+\ \  __\   \ \  __ \  \ \___  \  \ \____ \  \ \ \'/   \ \ \  \ \ \-./\ \  
+ \ \_____\  \ \_\ \_\  \/\_____\  \/\_____\  \ \__|    \ \_\  \ \_\ \ \_\ 
+  \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_/      \/_/   \/_/  \/_/ 
 
-                ,_---~~~~~----._         
-          _,,_,*^____      _____``*g*\"*, 
-         / __/ /'     ^.  /      \ ^@q   f 
-       [  @f | @))    |  | @))   l  0 _/  
-        \`/   \~____ / __ \_____/    \   
-          |           _l__l_           I   
-          }          [______]           I  
-          ]            | | |            |  
-          ]             ~ ~             |  
-          |                            |   
-           |                           |   
+Development coniguration for GoLang, VueJs and Python ~ by Luca Bockmann
 
-
-      ██████╗  ██████╗ ██╗   ██╗██╗███╗   ███╗
-      ██╔════╝ ██╔═══██╗██║   ██║██║████╗ ████║
-      ██║  ███╗██║   ██║██║   ██║██║██╔████╔██║
-      ██║   ██║██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
-      ╚██████╔╝╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
-      ╚═════╝  ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
    ]],
           -- stylua: ignore
           ---@type snacks.dashboard.Item[]
@@ -41,7 +30,7 @@ return {
             { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
             { icon = " ", key = "q", desc = "Quit", action = ":qa" },
           },
-        },
       },
     },
-  }
+  },
+}
